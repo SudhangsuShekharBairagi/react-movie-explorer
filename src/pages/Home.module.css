@@ -1,0 +1,51 @@
+.homeCon {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;  
+}
+.gradientText {
+        font-size: clamp(20px, 14vw, 150px);
+         background:linear-gradient(180deg, rgb(57, 199, 255), rgb(253, 241, 14),rgb(219, 3, 243), rgb(204, 20, 255));
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+         color: transparent;
+         font-weight: bold;
+         text-shadow: 0px 5px 10px rgb(16, 6, 198);
+         animation: flow 8s linear infinite;
+         margin: 0px;
+}
+.buttonCon{
+    display: flex;
+    justify-content: center;
+}
+.searchButton {
+    width: clamp(150px, 10vw, 220px);
+    font-size: clamp(11px, 2vw, 20px);
+    margin: 5px ;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    background:transparent;
+    color: aliceblue;
+    border: 0.5px solid crimson;
+    transition: background-color 1s linear, transform 0.5s ease-out;
+}
+.searchButton:active {
+    transform: translateY(6px);
+}
+.searchButton:hover {
+    background-color: crimson;
+}
+@media (max-width: 450px) {
+.buttonCon {
+    flex-direction: column;
+    align-items: center;
+}
+.searchButton {
+    width: 100%;
+}
+    
+}

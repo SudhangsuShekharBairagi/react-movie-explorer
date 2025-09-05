@@ -1,0 +1,95 @@
+.persons{    
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;              /* auto | thin | none */
+    -ms-overflow-style: none;
+         
+}
+.persons::-webkit-scrollbar {
+    display: none;
+}
+.scrollerWrapper {
+    position: relative;
+
+     width: 100%;
+  padding: 10px 0;
+}
+
+.scroll_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 30%;
+  font-size: clamp(20px, 5vw, 40px); 
+  display: none; /* hidden by default */
+}
+
+.scroll_btn.left {
+  left: 5px;
+}
+.scroll_btn.right {
+  right: 5px;
+}
+
+/* Show buttons only on desktop */
+@media (min-width: 768px) {
+  .scroll_btn {
+    display: block;
+  }
+}
+.person {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px;
+    margin: 5px;
+    flex: 0 0 auto;
+    width: clamp(100px, 15vw, 650px);
+    
+    height: 240px;
+    /* background: transparent; */
+    background-color: transparent;
+    border: 0.5px solid crimson;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgb(28, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;    
+    transition: background-color 1s linear, border 1s linear;   
+}
+.person:hover {
+  background-color: crimson;
+  border: 0.5px solid rgb(255, 10, 10);
+}
+.personName {
+   text-align: center;
+   
+}
+.personName h1{
+  font-size: clamp(14px, 4vw, 23px);
+    list-style: none;
+    text-decoration: none;
+    
+}
+.personName p  {
+    font-size: clamp(11px, 2vw, 12px);
+}
+.persons div img{
+    width: clamp(80px, 6vw, 150px);
+    height: auto;
+    border-radius: 50%;
+}
+
+.categoryName .categoryH1 {
+    margin: 5px;
+    padding: 10px;
+    border-left: 6px solid yellow;
+}

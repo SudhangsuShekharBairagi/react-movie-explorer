@@ -1,0 +1,150 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex: 0 0 auto;
+    width: clamp(100px, 15vw, 650px);
+    height: auto;
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    /* background-color: #5c5c5c41; */
+    overflow: hidden;
+    /* prevents overflow when animating */
+    border: 0.5px solid rgb(37, 29, 41);
+}
+
+.cardMovieImg {
+    width: auto;
+    height: clamp(100px, 15vw, 650px);
+    border-radius: 10px;
+    margin: 0 15px;
+}
+
+.cardPersonImg {
+    width: auto;
+    border-radius: 50%;
+    height: 80px;
+    margin: 0 15px;
+    margin-bottom: 5px;
+}
+
+.cardPersonName {
+    height: 40px;
+    margin: 0 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+
+.cardDetails {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex: 0 0 auto;
+    width: 30%;
+    height: 400px;
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin: 5px;
+      padding: 10px;
+    /* background-color: #5c5c5c41; */
+    overflow: hidden;
+    /* prevents overflow when animating */
+    border: 0.5px solid rgb(37, 29, 41);
+}
+
+.cardDetailsImg {
+    height: 250px;
+    border-radius: 10px;
+}
+.cardDetailsText{
+    height: 20px;
+    margin: 20px 0;
+    
+    border-radius: 10px;
+}
+.cardDetailsRB {
+    display: flex;
+    justify-content: space-between;
+}
+.cardDetailsrating {
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+}
+.cardDetailsButton {
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+}
+.Details {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DetailsImg {     
+    height: 300px; 
+    margin-left: 20px;
+    width: clamp(100px, 50vw, 300px);
+    border-radius: 10px;
+}
+.DetailsTextArea {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    
+    align-items: center;
+}
+.DetailsText {
+    height: 30px;
+    width: 90%; 
+    margin: 10px;
+    border-radius: 10px;
+} 
+@media (max-width: 400px){
+    .cardDetails {
+        width: 90%;
+    }
+    .Details {
+        align-items: center;
+        flex-direction: column;
+    }
+    .DetailsImg {
+         margin-left: 0px;
+    }
+    
+    
+}
+/* Skeleton shimmer effect */
+
+.cardMovieImg,
+.cardPersonImg,
+.cardPersonName,
+.cardDetailsImg,
+.cardDetailsText,
+.cardDetailsrating,
+.cardDetailsButton,
+.DetailsImg,
+.DetailsText {
+    background: linear-gradient(90deg, #2b2233 25%, #3b2f47 50%, #2b2233 75%);
+
+
+    background-size: 200% 100%;
+    animation: shine 1.5s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}

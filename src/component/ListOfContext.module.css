@@ -1,0 +1,15 @@
+
+.listBody{
+    margin: 15px;
+
+}
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.listHiding {
+   
+    padding: 10px;
+    border-left: 6px solid yellow;
+}

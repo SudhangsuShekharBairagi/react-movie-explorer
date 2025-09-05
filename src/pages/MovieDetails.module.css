@@ -1,0 +1,125 @@
+.movieDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    position: relative;  
+}
+.backButton {
+    background: transparent;
+    font-size: clamp(15px, 2vw, 20px);
+    width: 60px;
+    border: none;
+    color: aliceblue;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+p {
+    font-size: clamp(12px, 2vw, 20px);
+}
+.title {     
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;   
+   
+}
+.title h1 {
+    font-size: clamp(16px, 4vw, 40px);
+    margin: 0;
+
+}
+.title p{
+    margin: 0;
+    color: grey;
+}
+.details {
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    margin: 5px;
+}
+.imageBox  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+    
+    padding: 20px;
+    margin: 10px;
+    
+}
+.imageMovie18 {
+    position: absolute;
+    top: 23px;
+    right: 23px;    
+    width: clamp(10px, 5vw, 50px);
+    border-radius: 50%;
+    
+}
+.movieDetails  .imageBox .movieImg{
+    /* width: 100%; */
+    width: clamp(100px, 50vw, 300px);
+    height: auto;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 5px;
+    
+}
+
+.productionCompanies {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;    
+
+}
+.productionCompanies div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 0.5px solid crimson; */
+    /* border-radius: 12px;       */
+    text-align: center;
+}
+.productionCompanies div p {
+    overflow-wrap: break-word;
+    font-size: clamp(8px, 2vw, 12px);
+}
+
+.productionCompanies  img {
+    width: clamp(70px, 5vw, 120px);
+    height:auto;
+    margin: 5px;
+    object-fit: contain;
+ 
+}
+
+
+.infoMovie {
+    /* width: 50%; */
+    margin: 10px;
+    padding: 0px;
+     
+}
+.infoMovie p {
+    border-left: 4px solid yellow;
+    padding:0 5px;
+    text-align: justify;
+}
+.castH1 {
+    margin: 15px;
+    padding-left: 10px;
+    border-left: 6px solid yellow;
+}
+
+@media (max-width : 750px) {
+
+    .details {
+        flex-direction: column;
+       align-items: center;
+    }
+    
+}
