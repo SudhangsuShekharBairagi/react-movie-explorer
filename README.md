@@ -11,8 +11,8 @@
 - 👤 Explore popular and trending actors
 - 📄 Detailed movie & actor information
 - 📱 Responsive design with CSS Modules
-- [mobile2](./public/mobile2.jpeg)
-- [mobile](./public/mobile2.jpeg)
+- ![mobile2](./public/mobile2.jpeg)
+- ![mobile](./public/mobile2.jpeg)
 - ⚡ Fast performance with Vite + Context API
 
 ## 🛠️ Tech Stack
@@ -25,8 +25,8 @@
 
 ## Image
 
-- [actorDetails](./public/actorDetails.png)
-- [actorDetails2](./public/actorDetails2.png)
+- ![actorDetails](./public/actorDetails.png)
+- ![actorDetails2](./public/actorDetails2.png)
 
-- [movie](./public/movieDetails.png)
-- [movie2](./public/movieDetails2.png)
+- ![movie](./public/movieDetails.png)
+- ![movie2](./public/movieDetails2.png)
