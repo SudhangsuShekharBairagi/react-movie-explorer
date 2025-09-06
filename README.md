@@ -7,9 +7,23 @@
 - 🔎 Search for movies, series, and actors
   ![home](./public/home.png)
   ![footer](./public/footer.png)
+
+  ![search](./public/seriesSearch.png)
+  ![movieSearch](./public/movieSearch.png)
+  ![personSearch](./public/personsearch.png)
+
 - 🎥 Browse trending, popular, top-rated, and upcoming movies
+  ![upcomingMovies](./public/upcomingMovies.png)
 - 👤 Explore popular and trending actors
+  ![trending](./public/trendingPeopleIndianMovies.png)
+  ![popular](./public/popular.png)
 - 📄 Detailed movie & actor information
+  ![actorDetails](./public/actorDetails.png)
+  ![actorDetails2](./public/actorDetails2.png)
+
+  ![movie](./public/movieDetails.png)
+  ![movie2](./public/movieDetails2.png)
+
 - 📱 Responsive design with CSS Modules
   ![mobile2](./public/mobile.jpeg)
   ![mobile](./public/mobile2.jpeg)
@@ -23,20 +37,9 @@
 - CSS Modules
 - TMDB API
 
-## 📷 Image
-
-- Actor Details Section
-  ![actorDetails](./public/actorDetails.png)
-  ![actorDetails2](./public/actorDetails2.png)
-- Movie Details Section
-  ![movie](./public/movieDetails.png)
-  ![movie2](./public/movieDetails2.png)
-- Search Section
-  ![search](./public/seriesSearch.png)
-
   ## Installation
 
-  1. Clone the repo
+1. Clone the repo
 
 ```bash
   git clone https://github.com/SudhangsuShekharBairagi/react-movie-explorer.git
