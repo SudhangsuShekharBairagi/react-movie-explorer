@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 
 import MovieDetails from "./pages/MovieDetails";
@@ -12,25 +12,30 @@ import NavLayout from "./layout/NavLayout";
 import ListOfContent from "./component/ListOfContent";
 import MainContaner from "./pages/MainContaner";
 
-export default function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route element={<NavLayout />} >
 
-          <Route path="/" element={<MainContaner />} >
-            <Route index element={<Home />}></Route>
-            <Route path="movie" element={<SearchBarMovies />} />
-            <Route path="series" element={<SearchBarSeries />} />
-            <Route path="person" element={<SearchBarPerson />} />
-          </Route>
-          <Route path="/list/:name" element={<ListOfContent />} />
-          <Route path="/movie/:id" element={<MovieDetails />} />
-          <Route path="/series/:id" element={<TVDetails />} />
-          <Route path="/person/:id" element={<PersonDetails />} >
-          </Route>
-        </Route>
-      </Routes>
-    </Router>
+export default function App() {
+  const router = createBrowserRouter([
+    {
+      Component: NavLayout, children: [
+        {
+          path: "/",
+          Component: MainContaner,
+          children: [
+            { index: true, Component: Home },
+            { path: "movie", Component: SearchBarMovies },
+            { path: "series", Component: SearchBarSeries },
+            { path: "person", Component: SearchBarPerson },
+          ],
+        },
+        { path: "/list/:name", Component: ListOfContent },
+        { path: "/movie/:id", Component: MovieDetails },
+        { path: "/series/:id", Component: TVDetails },
+        { path: "/person/:id", Component: PersonDetails },
+      ],
+    },
+  ]);
+  return (
+
+    <RouterProvider router={router} />
   );
 }
