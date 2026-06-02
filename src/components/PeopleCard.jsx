@@ -1,8 +1,8 @@
-import { IMAGE_BASE_URL } from "../dataFetch/tmdb";
+﻿import { IMAGE_BASE_URL } from "../services/tmdb";
 import { Link, useNavigate, useNavigation } from "react-router-dom";
 import Style from "./PeopleCard.module.css"
 import { useEffect, useRef } from "react";
-import { ScrollProvider, useScrollCard } from "../context/ScrollContext";
+import { ScrollProvider, useScrollCard } from "../contexts/ScrollContext";
 function PeopleCardScroll({ persons }) {
     const navigate = useNavigate();
 
@@ -48,4 +48,5 @@ export default function PeopleCard({ persons }) {
         </ScrollProvider>
     )
 }
+
 

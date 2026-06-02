@@ -1,13 +1,13 @@
-import React from 'react'
-import TrendingMovies from "../component/TrendingMovies";
+﻿import React from 'react'
+import TrendingMovies from "../components/TrendingMovies";
 
-import PopularMovies from "../component/PopularMovies";
-import UpcomingMovies from "../component/UpcomingMovies";
-import TopRated from "../component/TopRated";
-import IndianMovies from "../component/IndianMovies";
-import Navbar from "../component/Navbar";
-import PopularPeople from "../Component2/PopularPeople";
-import TrendingPeople from "../Component2/TrendingPeople";
+import PopularMovies from "../components/PopularMovies";
+import UpcomingMovies from "../components/UpcomingMovies";
+import TopRated from "../components/TopRated";
+import IndianMovies from "../components/IndianMovies";
+import Navbar from "../components/Navbar";
+import PopularPeople from "../components/PopularPeople";
+import TrendingPeople from "../components/TrendingPeople";
 import { Outlet } from 'react-router-dom'
 
 const MainContaner = () => {

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+﻿import React, { createContext, useContext, useState, useEffect } from "react";
 
 export function createDataContext(fetchFn) {
     const DataContext = createContext();
@@ -55,3 +55,4 @@ export function createDataContext(fetchFn) {
     // Return both
     return [DataProvider, useData];
 }
+

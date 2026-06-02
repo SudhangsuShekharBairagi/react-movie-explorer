@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+﻿import React, { useEffect, useState } from 'react'
 import Style from "./MovieCard.module.css"
-import { API_KEY, BASE_URL } from '../dataFetch/tmdb';
+import { API_KEY, BASE_URL } from '../services/tmdb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { useSearch } from '../context/SearchContext';
+import { useSearch } from '../contexts/SearchContext';
 import SeriesCard from './SeriesCard';
-import { LoadingMovieDetails } from '../Component2/LoadingCard';
+import { LoadingMovieDetails } from './LoadingCard';
 import { useNavigate } from 'react-router-dom';
 const SearchBarSeries = () => {
     const [query, setQuery] = useState("");

@@ -1,9 +1,8 @@
-import { API_KEY, BASE_URL } from '../dataFetch/tmdb';
+﻿import { API_KEY, BASE_URL } from '../services/tmdb';
 
 import Style from "./PeopleCard.module.css"
-import usePersons from '../hook/FetchPerson';
 import PeopleCard from './PeopleCard';
-import { useTrendingPerson } from '../context/PersonContext';
+import { useTrendingPerson } from '../contexts/PersonContext';
 import { LoadingPerson } from './LoadingCard';
 
 const TrendingPeople = () => {

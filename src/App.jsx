@@ -3,13 +3,13 @@ import Home from "./pages/Home";
 
 import MovieDetails from "./pages/MovieDetails";
 import "./App.css"
-import SearchBarMovies from "./component/SearchBarMovies";
-import SearchBarSeries from "./component/SearchBarSeries";
+import SearchBarMovies from "./components/SearchBarMovies";
+import SearchBarSeries from "./components/SearchBarSeries";
 import PersonDetails from "./pages/PersonDetails";
 import TVDetails from "./pages/TVDetails";
-import SearchBarPerson from "./component/SearchBarPerson";
-import NavLayout from "./layout/NavLayout";
-import ListOfContent from "./component/ListOfContent";
+import SearchBarPerson from "./components/SearchBarPerson";
+import NavLayout from "./layouts/NavLayout";
+import ListOfContent from "./components/ListOfContent";
 import MainContaner from "./pages/MainContaner";
 
 

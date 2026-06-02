@@ -1,8 +1,8 @@
-import React from "react";
+﻿import React from "react";
 
 
 import { Outlet, useNavigate } from "react-router-dom";
-// import Style from "../component/MovieCard.module.css"
+// import Style from "../components/MovieCard.module.css"
 import Style from "./Home.module.css"
 
 
@@ -22,3 +22,4 @@ export default function Home() {
         </div>
     );
 }
+

@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import style from './LodingCard.module.css'
 export const LoadingMovieCard = () => {
     return (
@@ -47,3 +47,4 @@ export const LoadingDetails = () => {
         </div>
     )
 }
+

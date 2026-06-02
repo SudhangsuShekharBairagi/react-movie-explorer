@@ -1,4 +1,4 @@
-import { IMAGE_BASE_URL } from "../dataFetch/tmdb";
+﻿import { IMAGE_BASE_URL } from "../services/tmdb";
 import { Link, useNavigate, useNavigation } from "react-router-dom";
 import Style from "./MovieCard.module.css"
 
@@ -18,9 +18,10 @@ export default function MovieCard({ movie }) {
             </Link>
             <h3 className={Style.MovieName}>{movie.title}</h3>
             <div className={Style.buttonRating}>
-                <p className={Style.movieRating}>⭐ {movie.vote_average}</p>
+                <p className={Style.movieRating}>â­ {movie.vote_average}</p>
                 <button onClick={() => navigate(`/movie/${movie.id}`)}>Details</button>
             </div>
         </div>
     );
 }
+

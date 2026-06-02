@@ -1,5 +1,5 @@
-import { createContext, useContext, useState } from "react";
-import { API_KEY, BASE_URL } from "../dataFetch/tmdb";
+﻿import { createContext, useContext, useState } from "react";
+import { API_KEY, BASE_URL } from "../services/tmdb";
 
 const SearchContext = createContext();
 
@@ -20,7 +20,7 @@ export function SearchProvider({ children }) {
             const data = await res.json();
             if (!data.results || data.results.length === 0) {
                 setResults([]);
-                setError(`No ${type} found for "${q}"`);   // ✅ set custom error
+                setError(`No ${type} found for "${q}"`);   // âœ… set custom error
             } else {
                 setResults(data.results);
             }
@@ -43,3 +43,4 @@ export function SearchProvider({ children }) {
 export function useSearch() {
     return useContext(SearchContext);
 }
+

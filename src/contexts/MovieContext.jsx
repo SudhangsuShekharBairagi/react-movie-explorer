@@ -1,4 +1,4 @@
-import { API_KEY, BASE_URL } from "../dataFetch/tmdb";
+﻿import { API_KEY, BASE_URL } from "../services/tmdb";
 import { createDataContext } from "./createDataContext";
 
 function fetchTrending() {

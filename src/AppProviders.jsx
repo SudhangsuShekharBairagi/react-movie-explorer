@@ -1,8 +1,8 @@
-import { IndianMoviesProvider, PopularProvider, TopRatedProvider, TrendingProvider, UpcomingProvider } from "./context/MovieContext";
-import { PopularPeopleProvider, TrendingPeopleProvider } from "./context/PersonContext";
-import { MovieProvider, SeriesProvider } from "./context/PersonCreditesContext";
-import { PersonDetailsProvider } from "./context/PersonDetailsContext";
-import { SearchProvider } from "./context/SearchContext";
+import { IndianMoviesProvider, PopularProvider, TopRatedProvider, TrendingProvider, UpcomingProvider } from "./contexts/MovieContext";
+import { PopularPeopleProvider, TrendingPeopleProvider } from "./contexts/PersonContext";
+import { MovieProvider, SeriesProvider } from "./contexts/PersonCreditesContext";
+import { PersonDetailsProvider } from "./contexts/PersonDetailsContext";
+import { SearchProvider } from "./contexts/SearchContext";
 
 
 export function AppProviders({ children }) {

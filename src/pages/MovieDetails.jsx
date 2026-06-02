@@ -1,14 +1,14 @@
-
+﻿
 import { useEffect, useState, useMemo, lazy, Suspense } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { API_KEY, BASE_URL, getMovieDetails, IMAGE_BASE_URL } from "../dataFetch/tmdb";
+import { API_KEY, BASE_URL, getMovieDetails, IMAGE_BASE_URL } from "../services/tmdb";
 import Style from "./MovieDetails.module.css";
-import { LoadingDetails, LoadingPerson } from "../Component2/LoadingCard";
+import { LoadingDetails, LoadingPerson } from "../components/LoadingCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 // Lazy load PeopleCard (reduces initial paint time)
-const PeopleCard = lazy(() => import("../Component2/PeopleCard"));
+const PeopleCard = lazy(() => import("../components/PeopleCard"));
 
 export default function MovieDetails() {
     const navigate = useNavigate();
@@ -61,7 +61,7 @@ export default function MovieDetails() {
         return num.toString();
     }
 
-    // ✅ Memoize expensive values so they don’t recalc every render
+    // âœ… Memoize expensive values so they donâ€™t recalc every render
     const formattedVoteCount = useMemo(
         () => (movie ? formatIndianNumber(movie.vote_count) : ""),
         [movie]
@@ -117,7 +117,7 @@ export default function MovieDetails() {
                 <div className={Style.infoMovie}>
                     <p>{movie.overview}</p>
                     <p>
-                        ⭐{movie.vote_average.toFixed(1)}
+                        â­{movie.vote_average.toFixed(1)}
                         <span style={{ color: "grey" }}>/10</span> {formattedVoteCount}
                     </p>
                     <p>
@@ -174,3 +174,4 @@ export default function MovieDetails() {
         </div>
     );
 }
+

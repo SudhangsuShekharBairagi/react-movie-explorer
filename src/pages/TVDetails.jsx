@@ -1,4 +1,4 @@
-
+﻿
 import { useEffect, useState, useMemo, lazy, Suspense } from "react";
 import { useParams } from "react-router-dom";
 import {
@@ -6,11 +6,11 @@ import {
     BASE_URL,
     getTvDetails,
     IMAGE_BASE_URL,
-} from "../dataFetch/tmdb";
+} from "../services/tmdb";
 import Style from "./MovieDetails.module.css";
 
 // Lazy load cast list for better INP
-const PeopleCard = lazy(() => import("../Component2/PeopleCard"));
+const PeopleCard = lazy(() => import("../components/PeopleCard"));
 
 export default function TVDetails() {
     const { id } = useParams();
@@ -79,7 +79,7 @@ export default function TVDetails() {
                     {tv.name} {tv.original_name && `(${tv.original_name})`}
                 </h1>
                 <p>
-                    {tv.tagline} – {tv.genres.map((g) => g.name).join(", ")} –{" "}
+                    {tv.tagline} â€“ {tv.genres.map((g) => g.name).join(", ")} â€“{" "}
                     {tv.episode_run_time?.length > 0
                         ? (tv.episode_run_time[0] / 60).toFixed(2) + "h"
                         : "N/A"}
@@ -100,7 +100,7 @@ export default function TVDetails() {
                 <div className={Style.infoMovie}>
                     <p>{tv.overview}</p>
                     <p>
-                        ⭐{tv.vote_average.toFixed(1)}
+                        â­{tv.vote_average.toFixed(1)}
                         <span style={{ color: "grey" }}>/10</span> {formattedVoteCount}
                     </p>
                     <p>
@@ -148,3 +148,4 @@ export default function TVDetails() {
         </div>
     );
 }
+

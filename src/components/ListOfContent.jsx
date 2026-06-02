@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+﻿import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import MovieCard from './MovieCard';
 import style from "./ListOfContext.module.css"
-import { useIndianMovies, usePopular, useTopRated, useTrending, useUpcoming } from '../context/MovieContext';
-import { LoadingMovieDetails } from '../Component2/LoadingCard';
+import { useIndianMovies, usePopular, useTopRated, useTrending, useUpcoming } from '../contexts/MovieContext';
+import { LoadingMovieDetails } from './LoadingCard';
 
 const hookMap = {
     Trending: useTrending,

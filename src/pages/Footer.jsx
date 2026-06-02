@@ -1,4 +1,4 @@
-
+﻿
 import React from "react";
 import Style from "./Footer.module.css";
 
@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className={Style.footer}>
             <div className={Style.container}>
-                <p>🎬 Movie Search App &copy; {new Date().getFullYear()}</p>
+                <p>ðŸŽ¬ Movie Search App &copy; {new Date().getFullYear()}</p>
                 <p>
                     Powered by{" "}
                     <a
@@ -21,3 +21,4 @@ export default function Footer() {
         </footer>
     );
 }
+

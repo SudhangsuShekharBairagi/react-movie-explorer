@@ -1,10 +1,9 @@
-import { API_KEY, BASE_URL } from '../dataFetch/tmdb';
+﻿import { API_KEY, BASE_URL } from '../services/tmdb';
 import Style from "./MovieCard.module.css"
-import useMovies from '../hook/FetchMovies';
 import MoviesScroll from './MoviesScroll';
-import { useIndianMovies } from '../context/MovieContext';
+import { useIndianMovies } from '../contexts/MovieContext';
 import { useNavigate } from 'react-router-dom';
-import { LoadingMovieCard } from '../Component2/LoadingCard';
+import { LoadingMovieCard } from './LoadingCard';
 const IndianMovies = () => {
     const { data: movies, loading, error } = useIndianMovies();
     const navigate = useNavigate();

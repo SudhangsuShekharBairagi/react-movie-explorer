@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react'
+﻿import React, { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import Style from "./MovieCard.module.css"
 import { useEffect, useRef } from "react";
-import { IMAGE_BASE_URL } from '../dataFetch/tmdb'
-import { ScrollProvider, useScrollCard } from '../context/ScrollContext';
+import { IMAGE_BASE_URL } from '../services/tmdb'
+import { ScrollProvider, useScrollCard } from '../contexts/ScrollContext';
 
 const SeriesScrollCard = ({ series }) => {
     const { scroll, containerRef } = useScrollCard();

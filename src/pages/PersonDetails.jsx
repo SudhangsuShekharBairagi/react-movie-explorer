@@ -1,18 +1,18 @@
-
+﻿
 
 import React, { useEffect, lazy, Suspense } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { API_KEY, BASE_URL, IMAGE_BASE_URL } from "../dataFetch/tmdb";
+import { API_KEY, BASE_URL, IMAGE_BASE_URL } from "../services/tmdb";
 import Style from "./MovieDetails.module.css";
-import { useMovieContext, useSeriesContext } from "../context/PersonCreditesContext";
-import { usePersonDetails } from "../context/PersonDetailsContext";
-import { LoadingDetails, LoadingMovieCard } from "../Component2/LoadingCard";
+import { useMovieContext, useSeriesContext } from "../contexts/PersonCreditesContext";
+import { usePersonDetails } from "../contexts/PersonDetailsContext";
+import { LoadingDetails, LoadingMovieCard } from "../components/LoadingCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-// ✅ Lazy load heavy scroll components to improve INP
-const MoviesScroll = lazy(() => import("../component/MoviesScroll"));
-const SeriesScroll = lazy(() => import("../component/SeriesScroll"));
+// âœ… Lazy load heavy scroll components to improve INP
+const MoviesScroll = lazy(() => import("../components/MoviesScroll"));
+const SeriesScroll = lazy(() => import("../components/SeriesScroll"));
 
 const PersonDetails = () => {
     const navigate = useNavigate();
@@ -125,3 +125,4 @@ const PersonDetails = () => {
 };
 
 export default PersonDetails;
+

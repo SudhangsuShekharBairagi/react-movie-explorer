@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from "react";
+﻿import { createContext, useState, useContext } from "react";
 
 const MovieContext = createContext();
 
@@ -28,5 +28,6 @@ export const SeriesProvider = ({ children }) => {
 };
 
 export const useSeriesContext = () => useContext(SeriesContext);
+
 
 
