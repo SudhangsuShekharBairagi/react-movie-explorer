@@ -33,7 +33,10 @@ export default function App() {
         { path: "/person/:id", Component: PersonDetails },
       ],
     },
-  ]);
+  ], 
+  {
+    basename: "/react-movie-explorer/"
+  });
   return (
 
     <RouterProvider router={router} />
