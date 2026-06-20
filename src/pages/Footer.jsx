@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className={Style.footer}>
             <div className={Style.container}>
-                <p>ðŸŽ¬ Movie Search App &copy; {new Date().getFullYear()}</p>
+                <p>Movie Search App &copy; {new Date().getFullYear()}</p>
                 <p>
                     Powered by{" "}
                     <a

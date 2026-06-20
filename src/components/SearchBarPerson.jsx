@@ -1,8 +1,8 @@
-﻿import React, { useEffect, useState } from 'react'
+﻿import React, { useState } from 'react'
 import Style from "./MovieCard.module.css"
 import { API_KEY, BASE_URL } from '../services/tmdb';
 
-import { useSearch } from '../contexts/SearchContext';
+import { useSearch } from '../contexts/useSearchContext';
 import PeopleCard from './PeopleCard';
 import { LoadingPerson } from './LoadingCard';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

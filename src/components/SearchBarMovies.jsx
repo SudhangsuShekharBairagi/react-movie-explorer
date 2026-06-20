@@ -1,7 +1,7 @@
-﻿import React, { useEffect, useState } from 'react'
+﻿import React, { useState } from 'react'
 import Style from "./MovieCard.module.css"
 import MovieCard from './MovieCard';
-import { useSearch } from '../contexts/SearchContext';
+import { useSearch } from '../contexts/useSearchContext';
 import { LoadingMovieDetails } from "./LoadingCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";

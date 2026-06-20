@@ -1,7 +1,7 @@
-﻿import { createContext, useContext, useState } from "react";
+﻿import { createContext, useState } from "react";
 import { API_KEY, BASE_URL } from "../services/tmdb";
 
-const SearchContext = createContext();
+const SearchContextInternal = createContext();
 
 export function SearchProvider({ children }) {
     const [query, setQuery] = useState("");       // search input
@@ -20,11 +20,10 @@ export function SearchProvider({ children }) {
             const data = await res.json();
             if (!data.results || data.results.length === 0) {
                 setResults([]);
-                setError(`No ${type} found for "${q}"`);   // âœ… set custom error
+                setError(`No ${type} found for "${q}"`);
             } else {
                 setResults(data.results);
             }
-            // setResults(data.results || []);
         } catch (err) {
             setError(err.message);
             setResults([]);
@@ -34,13 +33,11 @@ export function SearchProvider({ children }) {
     }
 
     return (
-        <SearchContext.Provider value={{ query, results, loading, error, search }}>
+        <SearchContextInternal.Provider value={{ query, results, loading, error, search }}>
             {children}
-        </SearchContext.Provider>
+        </SearchContextInternal.Provider>
     );
 }
 
-export function useSearch() {
-    return useContext(SearchContext);
-}
+export { SearchContextInternal };
 

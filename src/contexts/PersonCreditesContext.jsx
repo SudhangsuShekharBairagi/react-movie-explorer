@@ -1,6 +1,6 @@
 ﻿import { createContext, useState, useContext } from "react";
 
-const MovieContext = createContext();
+export const MovieContext = createContext();
 
 export const MovieProvider = ({ children }) => {
     const [moviesByActor, setMoviesByActor] = useState({});
@@ -12,10 +12,8 @@ export const MovieProvider = ({ children }) => {
     );
 };
 
-export const useMovieContext = () => useContext(MovieContext);
 
-
-const SeriesContext = createContext();
+export const SeriesContext = createContext();
 
 export const SeriesProvider = ({ children }) => {
     const [seriesByActor, setSeriesByActor] = useState({});
@@ -27,7 +25,6 @@ export const SeriesProvider = ({ children }) => {
     );
 };
 
-export const useSeriesContext = () => useContext(SeriesContext);
 
 
 

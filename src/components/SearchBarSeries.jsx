@@ -1,9 +1,9 @@
-﻿import React, { useEffect, useState } from 'react'
+﻿import React, { useState } from 'react'
 import Style from "./MovieCard.module.css"
 import { API_KEY, BASE_URL } from '../services/tmdb';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { useSearch } from '../contexts/SearchContext';
+import { useSearch } from '../contexts/useSearchContext';
 import SeriesCard from './SeriesCard';
 import { LoadingMovieDetails } from './LoadingCard';
 import { useNavigate } from 'react-router-dom';

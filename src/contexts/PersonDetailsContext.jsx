@@ -1,4 +1,4 @@
-﻿import { createContext, useState, useContext } from "react";
+﻿import { createContext, useState } from "react";
 import { API_KEY, BASE_URL } from "../services/tmdb";
 
 export const PersonContext = createContext();
@@ -36,6 +36,4 @@ export const PersonDetailsProvider = ({ children }) => {
         </PersonContext.Provider>
     );
 };
-
-export const usePersonDetails = () => useContext(PersonContext);
 

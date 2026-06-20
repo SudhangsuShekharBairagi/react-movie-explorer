@@ -1,6 +1,6 @@
-﻿import { createContext, useContext, useRef } from "react";
+﻿import { createContext, useRef } from "react";
 
-const SrcollContext = createContext(null);
+export const ScrollContext = createContext(null);
 
 export const ScrollProvider = ({ children }) => {
     const containerRef = useRef(null);
@@ -20,12 +20,8 @@ export const ScrollProvider = ({ children }) => {
     };
 
     return (
-        <SrcollContext.Provider value={{ scroll, containerRef }}>
+        <ScrollContext.Provider value={{ scroll, containerRef }}>
             {children}
-        </SrcollContext.Provider>
+        </ScrollContext.Provider>
     )
-}
-
-export const useScrollCard = () => {
-    return useContext(SrcollContext);
 }

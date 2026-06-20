@@ -1,5 +1,5 @@
 ﻿import { IMAGE_BASE_URL } from "../services/tmdb";
-import { Link, useNavigate, useNavigation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Style from "./MovieCard.module.css"
 
 export default function SeriesCard({ movie }) {
